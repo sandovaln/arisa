@@ -35,7 +35,9 @@ if($method == 'POST'){
 }
 else
 {
-	echo "Method not allowed";
+	$response1 = new \stdClass();
+	$response1->fullfilmentText = "Method not allowed";
+	echo json_encode($response1);
 }
 
 ?>
